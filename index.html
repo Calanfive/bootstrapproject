@@ -14,48 +14,145 @@
               <img class="navbar-brand mb-0 h1" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width=50px/>
             </div>
           </nav>
-        <div class="container d-flex">
-        <div class="container">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Typographie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Couleurs et fonds</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">  Propriétés de positionnement et d'affichage</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Propriétés des listes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Propriétés des tableaux</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Autres propriétés</a>
-            </li>
-          </ul>
-        </div>
-        <div class="container">
-        <table class="table p-75">
+        <div class="row align-items-start">
+            <div class="col">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Typographie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Couleurs et fonds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">  Propriétés de positionnement et d'affichage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Propriétés des listes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Propriétés des tableaux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Autres propriétés</a>
+                    </li>
+                </ul>
+            </div>    
+            <div class="col">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Propriété</th>
+                        <th scope="col">Valeurs (exemples)</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <body>
+                        <td>font-family</td>
+                        <td>police1, police2, police3, serif, sans-serif, monospace</td>
+                        <td>Nom de police</td>
+                      </tr>
+                      <tr>
+                        <td>font-face</td>
+                        <td>@font-face {
+                            font-family: 'FontAwesome';
+                            src: url('fonts/fontawesome-webfont.woff2');
+                          }</td>
+                        <td>Police personnalisée</td>
+                      </tr>
+                      <tr>
+                        <tr>
+                            <td>font-size</td>
+                            <td>1.3em, 16px, 120%
+                            </td>
+                            <td>Taille du texte</td>
+                          </tr>
+                          <tr>
+                            <td>font-weight</td>
+                            <td>bold, normal, 300, 700, 900</td>
+                            <td>Gras, normal ou épaisseur de la graisse</td>
+                          </tr>
+                          <tr>
+                            <td>font-style</td>
+                            <td>italic, oblique, normal</td>
+                            <td>Italique</td>
+                          </tr>
+                          <tr>
+                            <td>text-decoration</td>
+                            <td>underline, overline, line-through, blink, none</td>
+                            <td>Soulignement, ligne au-dessus, barré ou clignotant</td>
+                          </tr>
+                          <tr>
+                            <td>font-variant</td>
+                            <td>small-caps, normal</td>
+                            <td>Petites capitales</td>
+                          </tr>
+                          <tr>
+                            <td>text-transform</td>
+                            <td>capitalize, lowercase, uppercase</td>
+                            <td>Capitales</td>
+                          </tr>
+                          <tr>
+                            <td>font</td>
+                            <td>/* style | variant | weight | size/line-height | family */
+                                font: italic small-caps bolder
+                                16px/3 cursive;</td>
+                            <td>Super propriété de police. Combine : font-weight, font-style, font-size, font-variant, font-family…</td>
+                          </tr>
+                          <tr>
+                            <td>text-align</td>
+                            <td>left, center, right, justify</td>
+                            <td>Alignement horizontal</td>
+                          </tr>
+                          <tr>
+                            <td>vertical-align</td>
+                            <td></td>
+                            <td>Alignement vertical (cellules de tableau ou éléments inline-block uniquement)</td>
+                          </tr>
+                          <tr>
+                            <td>line-height</td>
+                            <td>18px, 120%, normal...</td>
+                            <td>Hauteur de ligne</td>
+                          </tr>
+                          <tr>
+                            <td>text-indent</td>
+                            <td>25px</td>
+                            <td>Alinéa</td>
+                          </tr>
+                          <tr>
+                            <td>white-space</td>
+                            <td>pre, nowrap, normal</td>
+                            <td>Césure</td>
+                          </tr>
+                          <tr>
+                            <td>word-wrap</td>
+                            <td>break-word, normal</td>
+                            <td></Césure forcéetd>
+                          </tr>
+                          <tr>
+                            <td>text-shadow</td>
+                            <td>5px 5px 2px blue</td>
+                            <td>Ombre de texte</td>
+                          </tr>
+                        <td colspan="2">font-size</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        <table class="table">
             <thead>
               <tr>
-                <th scope="col">#</th>
                 <th scope="col">Propriété</th>
                 <th scope="col">Valeurs (exemples)</th>
                 <th scope="col">Description</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
+            <body>
                 <td>font-family</td>
                 <td>police1, police2, police3, serif, sans-serif, monospace</td>
                 <td>Nom de police</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
                 <td>font-face</td>
                 <td>@font-face {
                     font-family: 'FontAwesome';
@@ -65,44 +162,37 @@
               </tr>
               <tr>
                 <tr>
-                    <th scope="row">2</th>
                     <td>font-size</td>
                     <td>1.3em, 16px, 120%
                     </td>
                     <td>Taille du texte</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>font-weight</td>
                     <td>bold, normal, 300, 700, 900</td>
                     <td>Gras, normal ou épaisseur de la graisse</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>font-style</td>
                     <td>italic, oblique, normal</td>
                     <td>Italique</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>text-decoration</td>
                     <td>underline, overline, line-through, blink, none</td>
                     <td>Soulignement, ligne au-dessus, barré ou clignotant</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>font-variant</td>
                     <td>small-caps, normal</td>
                     <td>Petites capitales</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>text-transform</td>
                     <td>capitalize, lowercase, uppercase</td>
                     <td>Capitales</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>font</td>
                     <td>/* style | variant | weight | size/line-height | family */
                         font: italic small-caps bolder
@@ -110,55 +200,45 @@
                     <td>Super propriété de police. Combine : font-weight, font-style, font-size, font-variant, font-family…</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>text-align</td>
                     <td>left, center, right, justify</td>
                     <td>Alignement horizontal</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>vertical-align</td>
                     <td></td>
                     <td>Alignement vertical (cellules de tableau ou éléments inline-block uniquement)</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>line-height</td>
                     <td>18px, 120%, normal...</td>
                     <td>Hauteur de ligne</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>text-indent</td>
                     <td>25px</td>
                     <td>Alinéa</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>white-space</td>
                     <td>pre, nowrap, normal</td>
                     <td>Césure</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>word-wrap</td>
                     <td>break-word, normal</td>
                     <td></Césure forcéetd>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
                     <td>text-shadow</td>
                     <td>5px 5px 2px blue</td>
                     <td>Ombre de texte</td>
                   </tr>
-                <th scope="row">3</th>
                 <td colspan="2">font-size</td>
                 <td>@twitter</td>
               </tr>
             </tbody>
           </table>
-        </div>
-    </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
