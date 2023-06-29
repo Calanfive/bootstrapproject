@@ -5,6 +5,11 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #menu-vertical li:hover {
+                background-color: blue;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar d-flex justify-content-envely bg-light">
@@ -16,7 +21,7 @@
         </nav>
         <div class="row align-items-start">
             <div class="col-3">
-                <ul class="nav flex-column">
+                <ul id="menu-vertical" class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Typographie</a>
                     </li>
@@ -24,7 +29,7 @@
                         <a class="nav-link" href="#">Couleurs et fonds</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">  Propriétés de positionnement et d'affichage</a>
+                        <a class="nav-link" href="#">Propriétés de positionnement et d'affichage</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Propriétés des listes</a>
@@ -38,6 +43,7 @@
                 </ul>
             </div>    
             <div class="col-9">
+                <button type="button" class="btn text-white bg-primary">Typographie</button>
                 <table class="table">
                     <thead>
                       <tr>
@@ -133,11 +139,85 @@
                             <td>5px 5px 2px blue</td>
                             <td>Ombre de texte</td>
                           </tr>
-                        <td colspan="2">font-size</td>
-                        <td>@twitter</td>
                       </tr>
-                    </tbody>
+                    </body>
                 </table>
+                <button type="button" class="btn text-white bg-primary">Couleurs et fonds</button>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Propriété</th>
+                        <th scope="col">Valeurs (exemples)</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <body>
+                        <td>color</td>
+                        <td>#FFF
+                            rgb(255, 255, 255)
+                            rgba(255, 255, 255, 0.5)
+                            hsl ou hsla(0, 50%, 50%, 0.5)</td>
+                        <td>Exemple pour le blanc. la valeur a est l'opacité. HSL pour Teinte, Saturation et Luminosité.</td>
+                      </tr>
+                      <tr>
+                        <td>background-color</td>
+                        <td>id color</td>
+                        <td>Couleur de fond</td>
+                      </tr>
+                      <tr>
+                        <tr>
+                            <td>background-image</td>
+                            <td>url(localisation du fichier image)</td>
+                            <td>Image de fond</td>
+                          </tr>
+                          <tr>
+                            <td>background-attachment</td>
+                            <td>fixed, scroll</td>
+                            <td>fixe ou défilant</td>
+                          </tr>
+                          <tr>
+                            <td>background-repeat</td>
+                            <td>repeat-x, repeat-y, repeat, no-repeat</td>
+                            <td>Répétition du fond</td>
+                          </tr>
+                          <tr>
+                            <td>background-position</td>
+                            <td>	
+                                /* Valeurs utilisant un mot-clé */
+                                background-position: (top, bottom, left, right, center)
+                                /* Valeurs proportionnelles à la boîte */
+                                background-position: 25% 75%;
+                                /* Valeurs de longueur */
+                                background-position: 10px 20px;</td>
+                            <td>Position du fond</td>
+                          </tr>
+                          <tr>
+                            <td>background</td>
+                            <td>	
+                                /* On utilise une couleur a &lt;background-color&gt; */
+                                background: green;
+                                /* Ici, une &lt;bg-image&gt; avec &lt;repeat-style&gt; */
+                                background: url("test.jpg") repeat-y;
+                                /* Là &lt;box&gt; et &lt;background-color&gt; */
+                                background: border-box red;
+                                /* Ici on utilise une seule image, centrée 
+                                et remise à l'échelle */
+                                background: no-repeat center/80%
+                                url("../img/image.png");</td>
+                            <td>Super propriété de fond</td>
+                          </tr>
+                          <tr>
+                            <td>opacity</td>
+                            <td>opacity: 0.5;</td>
+                            <td>Opacité</td>
+                          </tr>
+                      </tr>
+                    </body>
+                </table>
+                <button type="button" class="btn text-white bg-primary">Propriétés de positionnement et d'affichage</button>
+                <button type="button" class="btn text-white bg-primary">Propriétés des listes</button>
+                <button type="button" class="btn text-white bg-primary">Propriétés des tableaux</button>
+                <button type="button" class="btn text-white bg-primary">Autres propriétés</button>
             </div>
         </div>
     </body>
