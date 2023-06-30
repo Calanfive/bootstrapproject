@@ -55,288 +55,290 @@
             </div>    
             <div class="col-9 mt-3">
                 <button id="typo" type="button" class="btn text-white bg-primary mb-1">Typographie</button>
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th class="text-white bg-primary" scope="col">Propriété</th>
-                        <th class="text-white bg-primary" scope="col">Valeurs (exemples)</th>
-                        <th class="text-white bg-primary" scope="col">Description</th>
-                      </tr>
-                    </thead>
-                    <body>
-                        <td>font-family</td>
-                        <td>police1, police2, police3, serif, sans-serif, monospace</td>
-                        <td>Nom de police</td>
-                      </tr>
-                      <tr>
-                        <td>font-face</td>
-                        <td>@font-face {
-                            font-family: 'FontAwesome';
-                            src: url('fonts/fontawesome-webfont.woff2');
-                          }</td>
-                        <td>Police personnalisée</td>
-                      </tr>
-                      <tr>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
                         <tr>
-                            <td>font-size</td>
-                            <td>1.3em, 16px, 120%
-                            </td>
-                            <td>Taille du texte</td>
-                          </tr>
-                          <tr>
-                            <td>font-weight</td>
-                            <td>bold, normal, 300, 700, 900</td>
-                            <td>Gras, normal ou épaisseur de la graisse</td>
-                          </tr>
-                          <tr>
-                            <td>font-style</td>
-                            <td>italic, oblique, normal</td>
-                            <td>Italique</td>
-                          </tr>
-                          <tr>
-                            <td>text-decoration</td>
-                            <td>underline, overline, line-through, blink, none</td>
-                            <td>Soulignement, ligne au-dessus, barré ou clignotant</td>
-                          </tr>
-                          <tr>
-                            <td>font-variant</td>
-                            <td>small-caps, normal</td>
-                            <td>Petites capitales</td>
-                          </tr>
-                          <tr>
-                            <td>text-transform</td>
-                            <td>capitalize, lowercase, uppercase</td>
-                            <td>Capitales</td>
-                          </tr>
-                          <tr>
-                            <td>font</td>
-                            <td>/* style | variant | weight | size/line-height | family */
-                                font: italic small-caps bolder
-                                16px/3 cursive;</td>
-                            <td>Super propriété de police. Combine : font-weight, font-style, font-size, font-variant, font-family…</td>
-                          </tr>
-                          <tr>
-                            <td>text-align</td>
-                            <td>left, center, right, justify</td>
-                            <td>Alignement horizontal</td>
-                          </tr>
-                          <tr>
-                            <td>vertical-align</td>
-                            <td></td>
-                            <td>Alignement vertical (cellules de tableau ou éléments inline-block uniquement)</td>
-                          </tr>
-                          <tr>
-                            <td>line-height</td>
-                            <td>18px, 120%, normal...</td>
-                            <td>Hauteur de ligne</td>
-                          </tr>
-                          <tr>
-                            <td>text-indent</td>
-                            <td>25px</td>
-                            <td>Alinéa</td>
-                          </tr>
-                          <tr>
-                            <td>white-space</td>
-                            <td>pre, nowrap, normal</td>
-                            <td>Césure</td>
-                          </tr>
-                          <tr>
-                            <td>word-wrap</td>
-                            <td>break-word, normal</td>
-                            <td></Césure forcéetd>
-                          </tr>
-                          <tr>
-                            <td>text-shadow</td>
-                            <td>5px 5px 2px blue</td>
-                            <td>Ombre de texte</td>
-                          </tr>
-                      </tr>
-                    </body>
-                </table>
-                <button id="couleursfonds" type="button" class="btn text-white bg-primary mt-4 mb-1">Couleurs et fonds</button>
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th class="text-white bg-primary" scope="col">Propriété</th>
-                        <th class="text-white bg-primary" scope="col">Valeurs (exemples)</th>
-                        <th class="text-white bg-primary" scope="col">Description</th>
-                      </tr>
-                    </thead>
-                    <body>
-                        <td>color</td>
-                        <td>#FFF
-                            rgb(255, 255, 255)
-                            rgba(255, 255, 255, 0.5)
-                            hsl ou hsla(0, 50%, 50%, 0.5)</td>
-                        <td>Exemple pour le blanc. la valeur a est l'opacité. HSL pour Teinte, Saturation et Luminosité.</td>
-                      </tr>
-                      <tr>
-                        <td>background-color</td>
-                        <td>id color</td>
-                        <td>Couleur de fond</td>
-                      </tr>
-                      <tr>
+                            <th class="text-white bg-primary" scope="col">Propriété</th>
+                            <th class="text-white bg-primary" scope="col">Valeurs (exemples)</th>
+                            <th class="text-white bg-primary" scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <body>
+                            <td>font-family</td>
+                            <td>police1, police2, police3, serif, sans-serif, monospace</td>
+                            <td>Nom de police</td>
+                        </tr>
                         <tr>
-                            <td>background-image</td>
-                            <td>url(localisation du fichier image)</td>
-                            <td>Image de fond</td>
-                          </tr>
-                          <tr>
-                            <td>background-attachment</td>
-                            <td>fixed, scroll</td>
-                            <td>fixe ou défilant</td>
-                          </tr>
-                          <tr>
-                            <td>background-repeat</td>
-                            <td>repeat-x, repeat-y, repeat, no-repeat</td>
-                            <td>Répétition du fond</td>
-                          </tr>
-                          <tr>
-                            <td>background-position</td>
-                            <td>	
-                                /* Valeurs utilisant un mot-clé */
-                                background-position: (top, bottom, left, right, center)
-                                /* Valeurs proportionnelles à la boîte */
-                                background-position: 25% 75%;
-                                /* Valeurs de longueur */
-                                background-position: 10px 20px;</td>
-                            <td>Position du fond</td>
-                          </tr>
-                          <tr>
-                            <td>background</td>
-                            <td>	
-                                /* On utilise une couleur a &lt;background-color&gt; */
-                                background: green;
-                                /* Ici, une &lt;bg-image&gt; avec &lt;repeat-style&gt; */
-                                background: url("test.jpg") repeat-y;
-                                /* Là &lt;box&gt; et &lt;background-color&gt; */
-                                background: border-box red;
-                                /* Ici on utilise une seule image, centrée 
-                                et remise à l'échelle */
-                                background: no-repeat center/80%
-                                url("../img/image.png");</td>
-                            <td>Super propriété de fond</td>
-                          </tr>
-                          <tr>
-                            <td>opacity</td>
-                            <td>opacity: 0.5;</td>
-                            <td>Opacité</td>
-                          </tr>
-                      </tr>
-                    </body>
-                </table>
-                <button id="pptboite" type="button" class="btn text-white bg-primary mt-4 mb-1">Propriétés des boîtes</button>
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th class="text-white bg-primary" scope="col">Propriété</th>
-                        <th class="text-white bg-primary" scope="col">Valeurs (exemples)</th>
-                        <th class="text-white bg-primary" scope="col">Description</th>
-                      </tr>
-                    </thead>
-                    <body>
-                        <td>width</td>
-                        <td>150px, 80%;</td>
-                        <td>Largeur</td>
-                      </tr>
-                      <tr>
-                        <td>height</td>
-                        <td>150px, 80%;</td>
-                        <td>Hauteur</td>
-                      </tr>
-                      <tr>
+                            <td>font-face</td>
+                            <td>@font-face {
+                                font-family: 'FontAwesome';
+                                src: url('fonts/fontawesome-webfont.woff2');
+                            }</td>
+                            <td>Police personnalisée</td>
+                        </tr>
                         <tr>
-                            <td>min-width</td>
+                            <tr>
+                                <td>font-size</td>
+                                <td>1.3em, 16px, 120%
+                                </td>
+                                <td>Taille du texte</td>
+                            </tr>
+                            <tr>
+                                <td>font-weight</td>
+                                <td>bold, normal, 300, 700, 900</td>
+                                <td>Gras, normal ou épaisseur de la graisse</td>
+                            </tr>
+                            <tr>
+                                <td>font-style</td>
+                                <td>italic, oblique, normal</td>
+                                <td>Italique</td>
+                            </tr>
+                            <tr>
+                                <td>text-decoration</td>
+                                <td>underline, overline, line-through, blink, none</td>
+                                <td>Soulignement, ligne au-dessus, barré ou clignotant</td>
+                            </tr>
+                            <tr>
+                                <td>font-variant</td>
+                                <td>small-caps, normal</td>
+                                <td>Petites capitales</td>
+                            </tr>
+                            <tr>
+                                <td>text-transform</td>
+                                <td>capitalize, lowercase, uppercase</td>
+                                <td>Capitales</td>
+                            </tr>
+                            <tr>
+                                <td>font</td>
+                                <td>/* style | variant | weight | size/line-height | family */
+                                    font: italic small-caps bolder
+                                    16px/3 cursive;</td>
+                                <td>Super propriété de police. Combine : font-weight, font-style, font-size, font-variant, font-family…</td>
+                            </tr>
+                            <tr>
+                                <td>text-align</td>
+                                <td>left, center, right, justify</td>
+                                <td>Alignement horizontal</td>
+                            </tr>
+                            <tr>
+                                <td>vertical-align</td>
+                                <td></td>
+                                <td>Alignement vertical (cellules de tableau ou éléments inline-block uniquement)</td>
+                            </tr>
+                            <tr>
+                                <td>line-height</td>
+                                <td>18px, 120%, normal...</td>
+                                <td>Hauteur de ligne</td>
+                            </tr>
+                            <tr>
+                                <td>text-indent</td>
+                                <td>25px</td>
+                                <td>Alinéa</td>
+                            </tr>
+                            <tr>
+                                <td>white-space</td>
+                                <td>pre, nowrap, normal</td>
+                                <td>Césure</td>
+                            </tr>
+                            <tr>
+                                <td>word-wrap</td>
+                                <td>break-word, normal</td>
+                                <td></Césure forcéetd>
+                            </tr>
+                            <tr>
+                                <td>text-shadow</td>
+                                <td>5px 5px 2px blue</td>
+                                <td>Ombre de texte</td>
+                            </tr>
+                        </tr>
+                        </body>
+                    </table>
+                    <button id="couleursfonds" type="button" class="btn text-white bg-primary mt-4 mb-1">Couleurs et fonds</button>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-white bg-primary" scope="col">Propriété</th>
+                            <th class="text-white bg-primary" scope="col">Valeurs (exemples)</th>
+                            <th class="text-white bg-primary" scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <body>
+                            <td>color</td>
+                            <td>#FFF
+                                rgb(255, 255, 255)
+                                rgba(255, 255, 255, 0.5)
+                                hsl ou hsla(0, 50%, 50%, 0.5)</td>
+                            <td>Exemple pour le blanc. la valeur a est l'opacité. HSL pour Teinte, Saturation et Luminosité.</td>
+                        </tr>
+                        <tr>
+                            <td>background-color</td>
+                            <td>id color</td>
+                            <td>Couleur de fond</td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>background-image</td>
+                                <td>url(localisation du fichier image)</td>
+                                <td>Image de fond</td>
+                            </tr>
+                            <tr>
+                                <td>background-attachment</td>
+                                <td>fixed, scroll</td>
+                                <td>fixe ou défilant</td>
+                            </tr>
+                            <tr>
+                                <td>background-repeat</td>
+                                <td>repeat-x, repeat-y, repeat, no-repeat</td>
+                                <td>Répétition du fond</td>
+                            </tr>
+                            <tr>
+                                <td>background-position</td>
+                                <td>	
+                                    /* Valeurs utilisant un mot-clé */
+                                    background-position: (top, bottom, left, right, center)
+                                    /* Valeurs proportionnelles à la boîte */
+                                    background-position: 25% 75%;
+                                    /* Valeurs de longueur */
+                                    background-position: 10px 20px;</td>
+                                <td>Position du fond</td>
+                            </tr>
+                            <tr>
+                                <td>background</td>
+                                <td>	
+                                    /* On utilise une couleur a &lt;background-color&gt; */
+                                    background: green;
+                                    /* Ici, une &lt;bg-image&gt; avec &lt;repeat-style&gt; */
+                                    background: url("test.jpg") repeat-y;
+                                    /* Là &lt;box&gt; et &lt;background-color&gt; */
+                                    background: border-box red;
+                                    /* Ici on utilise une seule image, centrée 
+                                    et remise à l'échelle */
+                                    background: no-repeat center/80%
+                                    url("../img/image.png");</td>
+                                <td>Super propriété de fond</td>
+                            </tr>
+                            <tr>
+                                <td>opacity</td>
+                                <td>opacity: 0.5;</td>
+                                <td>Opacité</td>
+                            </tr>
+                        </tr>
+                        </body>
+                    </table>
+                    <button id="pptboite" type="button" class="btn text-white bg-primary mt-4 mb-1">Propriétés des boîtes</button>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-white bg-primary" scope="col">Propriété</th>
+                            <th class="text-white bg-primary" scope="col">Valeurs (exemples)</th>
+                            <th class="text-white bg-primary" scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <body>
+                            <td>width</td>
                             <td>150px, 80%;</td>
-                            <td>Largeur minimale</td>
-                          </tr>
-                          <tr>
-                            <td>max-width</td>
+                            <td>Largeur</td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
                             <td>150px, 80%;</td>
-                            <td>Largeur maximale</td>
-                          </tr>
-                          <tr>
-                            <td>min-height</td>
-                            <td>150px, 80%;</td>
-                            <td>Hauteur minimale</td>
-                          </tr>
-                          <tr>
-                            <td>max-height</td>
-                            <td>150px, 80%;</td>
-                            <td>Hauteur maximale</td>
-                          </tr>
-                          <tr>
-                            <td>margin-top</td>
-                            <td>150px, 80%;</td>
-                            <td>Marge en haut</td>
-                          </tr>
-                          <tr>
-                            <td>margin-left</td>
-                            <td>150px, 80%;</td>
-                            <td>Marge à gauche</td>
-                          </tr>
-                          <tr>
-                            <td>margin-right</td>
-                            <td>23px</td>
-                            <td>Hauteur maximale</td>
-                          </tr>
-                          <tr>
-                            <td>margin-bottom</td>
-                            <td>23px;</td>
-                            <td>Marge en bas</td>
-                          </tr>
-                          <tr>
-                            <td>padding</td>
-                            <td>23px;</td>
-                            <td>Marge intérieure</td>
-                          </tr>
-                          <tr>
-                            <td>border-width</td>
-                            <td>23px;</td>
-                            <td>Épaisseur de bordure</td>
-                          </tr>
-                          <tr>
-                            <td>border-color</td>
-                            <td>nom, rgb(rouge,vert,bleu),rgba(rouge,vert,bleu,transparence), #CF1A20...</td>
-                            <td>Couleur de bordure</td>
-                          </tr>
-                          <tr>
-                            <td>border-style</td>
-                            <td>solid, dotted, dashed,
-                                double, groove,
-                                ridge, inset, outset;</td>
-                            <td>Type de bordure</td>
-                          </tr>
-                          <tr>
-                            <td>border</td>
-                            <td>3px solid black;</td>
-                            <td>	
-                                Super-propriété de bordure. Combine border-width, border-color, border-style.
-                                
-                                Existe aussi en version border-top, border-right, border-bottom, border-left.</td>
-                          </tr>
-                          <tr>
-                            <td>border-radius</td>
-                            <td>5px;</td>
-                            <td>Bordure arrondie</td>
-                          </tr>
-                          <tr>
-                            <td>box-shadow</td>
-                            <td>6px 6px 0px black;</td>
-                            <td>Ombre de boîte</td>
-                          </tr>                          <tr>
-                            <td>background-clip</td>
-                            <td>border-box; padding-box; content-box;
-                                text;</td>
-                            <td>Limitation du fond dans la boîte. Sous la bordure, dans le contenu y compris le padding, dans le contenu, dans le texte.</td>
-                          </tr>
-                      </tr>
-                    </body>
-                </table>
-                <button id="pptpstaff" type="button" class="btn text-white bg-primary mt-4 mb-1">Propriétés de positionnement et d'affichage</button>
-                <button id="pptlist" type="button" class="btn text-white bg-primary mt-4 mb-1">Propriétés des listes</button>
-                <button id="ppttablo" type="button" class="btn text-white bg-primary mt-4 mb-1">Propriétés des tableaux</button>
-                <button id="otherppt" type="button" class="btn text-white bg-primary mt-4 mb-1">Autres propriétés</button>
+                            <td>Hauteur</td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>min-width</td>
+                                <td>150px, 80%;</td>
+                                <td>Largeur minimale</td>
+                            </tr>
+                            <tr>
+                                <td>max-width</td>
+                                <td>150px, 80%;</td>
+                                <td>Largeur maximale</td>
+                            </tr>
+                            <tr>
+                                <td>min-height</td>
+                                <td>150px, 80%;</td>
+                                <td>Hauteur minimale</td>
+                            </tr>
+                            <tr>
+                                <td>max-height</td>
+                                <td>150px, 80%;</td>
+                                <td>Hauteur maximale</td>
+                            </tr>
+                            <tr>
+                                <td>margin-top</td>
+                                <td>150px, 80%;</td>
+                                <td>Marge en haut</td>
+                            </tr>
+                            <tr>
+                                <td>margin-left</td>
+                                <td>150px, 80%;</td>
+                                <td>Marge à gauche</td>
+                            </tr>
+                            <tr>
+                                <td>margin-right</td>
+                                <td>23px</td>
+                                <td>Hauteur maximale</td>
+                            </tr>
+                            <tr>
+                                <td>margin-bottom</td>
+                                <td>23px;</td>
+                                <td>Marge en bas</td>
+                            </tr>
+                            <tr>
+                                <td>padding</td>
+                                <td>23px;</td>
+                                <td>Marge intérieure</td>
+                            </tr>
+                            <tr>
+                                <td>border-width</td>
+                                <td>23px;</td>
+                                <td>Épaisseur de bordure</td>
+                            </tr>
+                            <tr>
+                                <td>border-color</td>
+                                <td>nom, rgb(rouge,vert,bleu),rgba(rouge,vert,bleu,transparence), #CF1A20...</td>
+                                <td>Couleur de bordure</td>
+                            </tr>
+                            <tr>
+                                <td>border-style</td>
+                                <td>solid, dotted, dashed,
+                                    double, groove,
+                                    ridge, inset, outset;</td>
+                                <td>Type de bordure</td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>3px solid black;</td>
+                                <td>	
+                                    Super-propriété de bordure. Combine border-width, border-color, border-style.
+                                    
+                                    Existe aussi en version border-top, border-right, border-bottom, border-left.</td>
+                            </tr>
+                            <tr>
+                                <td>border-radius</td>
+                                <td>5px;</td>
+                                <td>Bordure arrondie</td>
+                            </tr>
+                            <tr>
+                                <td>box-shadow</td>
+                                <td>6px 6px 0px black;</td>
+                                <td>Ombre de boîte</td>
+                            </tr>                          <tr>
+                                <td>background-clip</td>
+                                <td>border-box; padding-box; content-box;
+                                    text;</td>
+                                <td>Limitation du fond dans la boîte. Sous la bordure, dans le contenu y compris le padding, dans le contenu, dans le texte.</td>
+                            </tr>
+                        </tr>
+                        </body>
+                    </table>
+                    <button id="pptpstaff" type="button" class="btn text-white bg-primary mt-4 mb-1">Propriétés de positionnement et d'affichage</button>
+                    <a> <button id="pptlist" type="button" class="btn text-white bg-primary mt-4 mb-1">Propriétés des listes</button> </a>
+                    <button id="ppttablo" type="button" class="btn text-white bg-primary mt-4 mb-1">Propriétés des tableaux</button>
+                    <button id="otherppt" type="button" class="btn text-white bg-primary mt-4 mb-1">Autres propriétés</button>
+                </div>
             </div>
         </div>
     </body>
